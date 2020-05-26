@@ -204,15 +204,16 @@ int main()
   }
 
 
-  cout<<"Number of ways to get 25 cents with 7 coins: "<<polynomial20[make_pair(25,7)]<<'\n';
-  
+  cout<<"\nNumber of ways to get 25 cents with 7 coins: "<<polynomial20[make_pair(25,7)]<<"\n\n";
+
   int sum = 0;
   for(int i=1; i<=7; i++)
   {
+    cout<<polynomial20[make_pair(25,i)]<<"x^"<<25<<"y^"<<i<<"\n";
     sum+=polynomial20[make_pair(25,i)];
   }
 
-  cout<<"Number of ways to get 25 cents with at most 7 coins: "<<sum<<'\n';
+  cout<<"\nNumber of ways to get 25 cents with at most 7 coins: "<<sum<<'\n';
 
 
 }
